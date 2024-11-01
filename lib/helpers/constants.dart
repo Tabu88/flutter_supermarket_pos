@@ -2,7 +2,7 @@ class Constants
 {
 
   static int primaryWhite(){
-    return 0xFFFFFFF;
+    return 0xFFFFFFFF;
   }
 
   static int primaryGreen(){

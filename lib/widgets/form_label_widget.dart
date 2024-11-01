@@ -17,7 +17,7 @@ class FormLabelText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.only(top: 10,bottom: 12),
+      padding: const EdgeInsets.only(top: 10,bottom: 8),
       child: Text(
         title,
         style: TextStyle(

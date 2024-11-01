@@ -1,10 +1,12 @@
 enum RoutesEnum {
   dashboard,
   items,
-  customers,
+  category,
   suppliers,
+  customers,
   reports,
   receivings,
+  pointOfSale,
   sales,
   employees,
   messages,

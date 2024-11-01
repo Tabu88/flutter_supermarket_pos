@@ -14,7 +14,12 @@ class Routes {
     RoutesEnum.sales: "/sales",
     RoutesEnum.employees: "/employees",
     RoutesEnum.logOut: "/logOut",
-    RoutesEnum.signIn: "/signIn"
+    RoutesEnum.category: "/category",
+    RoutesEnum.pointOfSale: "/point-of-sale",
+    RoutesEnum.messages: "/messages",
+    RoutesEnum.taxes: "/taxes",
+    RoutesEnum.expenses: "/expenses",
+    RoutesEnum.signIn: "/signIn",
   };
 
   static String getValueForRoute(RoutesEnum route)
