@@ -13,4 +13,8 @@ class Constants
     return 0xFF000000;
   }
 
+  static int primaryGrey(){
+    return 0xFF939393;
+  }
+
 }

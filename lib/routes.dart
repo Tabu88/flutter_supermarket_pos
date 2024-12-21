@@ -1,5 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:spar_pos/pages/dashboard.dart';
+import 'package:spar_pos/pages/point_of_sale.dart';
 import 'package:spar_pos/pages/sign_in.dart';
 import 'helpers/routes_enums.dart';
 
@@ -36,11 +37,11 @@ final getPages = [
   GetPage(
     name: Routes.getValueForRoute(RoutesEnum.signIn),
     page: () => const SignInScreen(),
-  )
-/*  GetPage(
-    name: Routes.getValueForRoute(RoutesEnum.items),
-    page: () => ItemsScreen(),
-  ),*/
+  ),
+  GetPage(
+    name: Routes.getValueForRoute(RoutesEnum.pointOfSale),
+    page: () => POSScreen(),
+  ),
  /* GetPage(
     name: Routes.getValueForRoute(RoutesEnum.suppliers),
     page: () => ,

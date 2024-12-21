@@ -125,154 +125,201 @@ class _DashboardState extends State<Dashboard> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                child: Text(
+                  "Welcome ADMIN",
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Color(Constants.primaryBlack()),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                child: Text(
+                  "Dashboard",
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Color(Constants.primaryBlack()),
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.all(20),
               child: SizedBox(
-                height: 300,
+                height: 200,
                 width: double.infinity,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
                       flex: 2,
-                      child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Icon(Icons.insert_chart_outlined_outlined, size: 50 ,color: Color(Constants.primaryGreen()),),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Total sales",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                                color: Color(Constants.primaryBlack())
+                      child: Card(
+                        elevation: 5.0,
+                        color: Color(Constants.primaryWhite()),
+                        child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Icon(Icons.insert_chart_outlined_outlined, size: 50 ,color: Color(Constants.primaryGreen()),),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Total sales",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            "1,902.25",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Color(Constants.primaryBlack())
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text(
+                              "1,902.25",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),),
+                          )
+                        ],
+                                            ),
+                      ),),
                     Expanded(
                       flex: 2,
-                      child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Icon(Icons.add_shopping_cart, size: 50 ,color: Color(Constants.primaryGreen()),),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Total items",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                                color: Color(Constants.primaryBlack())
+                      child: Card(
+                        elevation: 5.0,
+                        color: Color(Constants.primaryWhite()),
+                        child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Icon(Icons.add_shopping_cart, size: 50 ,color: Color(Constants.primaryGreen()),),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Total items",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            "1,902.25",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Color(Constants.primaryBlack())
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text(
+                              "1,902.25",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),),
+                          )
+                        ],
+                                            ),
+                      ),),
                     Expanded(
                       flex: 2,
-                      child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Icon(Icons.cancel_presentation_outlined, size: 50 ,color: Colors.red,),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Critical stocks",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                                color: Color(Constants.primaryBlack())
+                      child: Card(
+                        elevation: 5.0,
+                        color: Color(Constants.primaryWhite()),
+                        child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Icon(Icons.cancel_presentation_outlined, size: 50 ,color: Colors.red,),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Critical stocks",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Text(
-                            "1,902.25",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Color(Constants.primaryBlack())
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Text(
+                              "1,902.25",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),),
+                          )
+                        ],
+                                            ),
+                      ),),
                     Expanded(
                       flex: 2,
-                      child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Icon(Icons.shopping_bag_outlined, size: 50 ,color: Color(Constants.primaryGreen()),),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Item sold",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                                color: Color(Constants.primaryBlack())
+                      child: Card(
+                        elevation: 5.0,
+                        color: Color(Constants.primaryWhite()),
+                        child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Icon(Icons.shopping_bag_outlined, size: 50 ,color: Color(Constants.primaryGreen()),),
+                          ),
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Item sold",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 10,),
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            "18",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Color(Constants.primaryBlack())
+                          const SizedBox(height: 10,),
+                          Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text(
+                              "18",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Color(Constants.primaryBlack())
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),)
+                          )
+                        ],
+                                            ),
+                      ),)
                   ],
                 ),
               )

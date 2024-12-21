@@ -1,5 +1,5 @@
 class IndividualBar{
-  final String x;
+  final int x;
   final double y;
 
   IndividualBar({

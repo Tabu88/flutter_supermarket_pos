@@ -23,13 +23,13 @@ class BarData{
   List<IndividualBar> barData = [];
   void initializeBarData() {
     barData = [
-      IndividualBar(x: "Sun", y: sunAmount),
-      IndividualBar(x: "Mon", y: monAmount),
-      IndividualBar(x: "Tue", y: tueAmount),
-      IndividualBar(x: "Wed", y: wedAmount),
-      IndividualBar(x: "Thur", y: thurAmount),
-      IndividualBar(x: "Fri", y: friAmount),
-      IndividualBar(x: "Sat", y: satAmount),
+      IndividualBar(x: 1, y: sunAmount),
+      IndividualBar(x: 2, y: monAmount),
+      IndividualBar(x: 3, y: tueAmount),
+      IndividualBar(x: 4, y: wedAmount),
+      IndividualBar(x: 5, y: thurAmount),
+      IndividualBar(x: 6, y: friAmount),
+      IndividualBar(x: 7, y: satAmount),
     ];
   }
 }
