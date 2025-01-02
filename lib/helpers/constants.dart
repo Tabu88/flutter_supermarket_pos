@@ -17,4 +17,8 @@ class Constants
     return 0xFF939393;
   }
 
+  static int primaryRed(){
+    return 0xFFD21616;
+  }
+
 }
